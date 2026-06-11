@@ -11,6 +11,10 @@ class AgentState(TypedDict, total=False):
     audio_path: str
     sample_rate: int
     cleaned_audio: np.ndarray
+    pitch_hz: np.ndarray
+    tempo_bpm: float
+    key: str
+    notes: list[str]
     errors: list[str]
 
 
