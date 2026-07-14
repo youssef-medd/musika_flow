@@ -15,6 +15,7 @@ class AgentState(TypedDict, total=False):
     tempo_bpm: float
     key: str
     notes: list[str]
+    embedding: np.ndarray
     errors: list[str]
 
 
